@@ -42,22 +42,47 @@
     </dependency>
 
     <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-        <version>2.9.1</version>
+    <groupId>org.tinylog</groupId>
+    <artifactId>tinylog-api</artifactId>
+    <version>2.7.0</version>
     </dependency>
     <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>2.9.1</version>
+        <groupId>org.tinylog</groupId>
+        <artifactId>tinylog-impl</artifactId>
+        <version>2.7.0</version>
     </dependency>
 
+    <dependency>
+    <groupId>org.tinylog</groupId>
+    <artifactId>jcl-tinylog</artifactId>
+    <version>2.7.0</version>
+    </dependency>
+<dependency>
+    <groupId>org.tinylog</groupId>
+    <artifactId>log4j1.2-api</artifactId>
+    <version>2.7.0</version>
+</dependency>
+<dependency>
+    <groupId>org.tinylog</groupId>
+    <artifactId>jsl-tinylog</artifactId>
+    <version>2.7.0</version>
+</dependency>
+<dependency>
+    <groupId>org.tinylog</groupId>
+    <artifactId>jul-tinylog</artifactId>
+    <version>2.7.0</version>
+</dependency>
+<dependency>
+    <groupId>org.tinylog</groupId>
+    <artifactId>slf4j-tinylog</artifactId>
+    <version>2.7.0</version>
+</dependency>
   </dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-      <plugin>
+      <!-- <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.6.0</version>
@@ -79,7 +104,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -98,7 +123,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.3.0</version>
         </plugin>
-        <!-- <plugin>
+        <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.4.2</version>
           <configuration>
@@ -109,7 +134,7 @@
               </manifest>
             </archive>
           </configuration>
-        </plugin> -->
+        </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
           <version>3.1.2</version>
